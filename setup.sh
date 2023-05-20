@@ -112,7 +112,8 @@ wget https://raw.githubusercontent.com/${GitUser}/projek/main/install/ssr.sh && 
 wget https://raw.githubusercontent.com/${GitUser}/projek/main/install/shadowsocksobfs.sh && chmod +x shadowsocksobfs.sh && screen -S shadowsocksobfs.sh ./shadowsocksobfs.sh
 wget https://raw.githubusercontent.com/${GitUser}/projek/main/install/ins-vt.sh && chmod +x ins-vt.sh && sed -i -e 's/\r$//' /root/ins-vt.sh && screen -S v2ray.sh ./ins-vt.sh
 wget https://raw.githubusercontent.com/${GitUser}/projek/main/install/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec.sh ./ipsec.sh
-wget https://raw.githubusercontent.com/${GitUser}/projek/main/install/sshonly.sh
+wget https://raw.githubusercontent.com/${GitUser}/projek/main/install/sshonly.sh chmod +x sshonly.sh && ./sshonly.sh
+
 
 # Remove script has installed
 rm -f /root/ssh-vpn.sh
