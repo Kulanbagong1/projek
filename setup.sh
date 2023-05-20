@@ -103,15 +103,15 @@ echo -e "\e[1;41m==========================================================\e[0m
 sleep 3
 clear 
 cd
-GitUser="syapik96"
-wget https://raw.githubusercontent.com/${GitUser}/aws/main/install/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn.sh ./ssh-vpn.sh
-wget https://raw.githubusercontent.com/${GitUser}/aws/main/websocket-python/websocket.sh && chmod +x websocket.sh && screen -S websocket.sh ./websocket.sh
-wget https://raw.githubusercontent.com/${GitUser}/aws/main/install/sstp.sh && chmod +x sstp.sh && screen -S sstp.sh ./sstp.sh
-wget https://raw.githubusercontent.com/${GitUser}/aws/main/install/wg.sh && chmod +x wg.sh && screen -S wg.sh ./wg.sh
-wget https://raw.githubusercontent.com/${GitUser}/aws/main/install/ssr.sh && chmod +x ssr.sh && screen -S ssr.sh ./ssr.sh
-wget https://raw.githubusercontent.com/${GitUser}/aws/main/install/shadowsocksobfs.sh && chmod +x shadowsocksobfs.sh && screen -S shadowsocksobfs.sh ./shadowsocksobfs.sh
-wget https://raw.githubusercontent.com/${GitUser}/aws/main/install/ins-vt.sh && chmod +x ins-vt.sh && sed -i -e 's/\r$//' /root/ins-vt.sh && screen -S v2ray.sh ./ins-vt.sh
-wget https://raw.githubusercontent.com/${GitUser}/aws/main/install/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec.sh ./ipsec.sh
+GitUser="Kulanbagong1"
+wget https://raw.githubusercontent.com/${GitUser}/projek/main/install/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn.sh ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/${GitUser}/projek/main/websocket-python/websocket.sh && chmod +x websocket.sh && screen -S websocket.sh ./websocket.sh
+wget https://raw.githubusercontent.com/${GitUser}/projek/main/install/sstp.sh && chmod +x sstp.sh && screen -S sstp.sh ./sstp.sh
+wget https://raw.githubusercontent.com/${GitUser}/projek/main/install/wg.sh && chmod +x wg.sh && screen -S wg.sh ./wg.sh
+wget https://raw.githubusercontent.com/${GitUser}/projek/main/install/ssr.sh && chmod +x ssr.sh && screen -S ssr.sh ./ssr.sh
+wget https://raw.githubusercontent.com/${GitUser}/projek/main/install/shadowsocksobfs.sh && chmod +x shadowsocksobfs.sh && screen -S shadowsocksobfs.sh ./shadowsocksobfs.sh
+wget https://raw.githubusercontent.com/${GitUser}/projek/main/install/ins-vt.sh && chmod +x ins-vt.sh && sed -i -e 's/\r$//' /root/ins-vt.sh && screen -S v2ray.sh ./ins-vt.sh
+wget https://raw.githubusercontent.com/${GitUser}/projek/main/install/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec.sh ./ipsec.sh
 
 # Remove script has installed
 rm -f /root/ssh-vpn.sh
@@ -152,14 +152,14 @@ echo "   - Wireguard                : 7070" | tee -a log-install.txt
 echo "   - L2TP/IPSEC VPN           : 1701" | tee -a log-install.txt
 echo "   - PPTP VPN                 : 1732" | tee -a log-install.txt
 echo "   - SSTP VPN                 : 5555" | tee -a log-install.txt
-echo "   - Shadowsocks-R            : 1443-1543" | tee -a log-install.txt
+echo "   - Shadowsocks-R            : 443" | tee -a log-install.txt
 echo "   - SS-OBFS TLS              : 2443-2543" | tee -a log-install.txt
 echo "   - SS-OBFS HTTP             : 3443-3453" | tee -a log-install.txt
-echo "   - V2RAY Vmess TLS          : 8443" | tee -a log-install.txt
-echo "   - V2RAY Vmess None TLS     : 880" | tee -a log-install.txt
-echo "   - V2RAY Vless TLS          : 2083" | tee -a log-install.txt
-echo "   - V2RAY Vless None TLS     : 2052" | tee -a log-install.txt
-echo "   - Trojan Go                : 2087" | tee -a log-install.txt
+echo "   - V2RAY Vmess TLS          : 443" | tee -a log-install.txt
+echo "   - V2RAY Vmess None TLS     : 80" | tee -a log-install.txt
+echo "   - V2RAY Vless TLS          : 443" | tee -a log-install.txt
+echo "   - V2RAY Vless None TLS     : 80" | tee -a log-install.txt
+echo "   - Trojan Go                : 443" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo -e "   >>> \e[1;42mServer Information & Other Features\e[0m" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
