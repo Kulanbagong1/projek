@@ -198,6 +198,11 @@ echo -e "\033[96m━━━━━━━━━━━━━━━━━━━━━
 echo -e "UDP Custom	Port  : 54-65535"
 echo -e "Account UDP      : $domain:54-65535@$LOGIN:$PASSWD"
 echo -e "\033[96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "\033[96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "      Account DNS      "
+echo -e "1.1.1.1:$PUB@$LOGIN:$PASSWD@$NS"
+echo -e "8.8.8.8:$PUB@$LOGIN:$PASSWD@$NS"
+echo -e "\033[96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e ""
 read -n 1 -s -r -p "Press [ Enter ] to back menu ssh"
 ssh
