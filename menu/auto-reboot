@@ -2,7 +2,7 @@
 red() { echo -e "\\033[32;1m${*}\\033[0m"; }
 TIMES="10"
 CHATID="1316596937"
-KEY="6003347945:AAHv1Ti4HQliYwpYm8sbKrriDkSMqqJLUqE"
+KEY="6149751863:AAH_trZtL0Y6NMskF6nxeVGZgFpowXi85uc"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
 red='\e[1;31m'
