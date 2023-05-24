@@ -151,6 +151,11 @@ TEXT="
 <code>          Account UDP       </code>
 <code>$domain:54-65535@$LOGIN:$PASSWD</code>
 <code>───────────────────────────</code>
+<code>───────────────────────────</code>
+<code>          Account DNS       </code>
+<code>1.1.1.1:$PUB@$LOGIN:$PASSWD@$NS</code>
+<code>8.8.8.8:$PUB@$LOGIN:$PASSWD@$NS</code>
+<code>───────────────────────────</code>
 "
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL
 clear
