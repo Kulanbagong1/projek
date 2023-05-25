@@ -46,7 +46,7 @@ read -p "  Username : " LOGIN
 read -p "  Password : " PASSWD
 read -p "  Expired (hari): " EXPIRED
 IP=$(curl -sS ifconfig.me)
-CITY=$(cat /etc/xray/city)
+#CITY=$(cat /etc/xray/city)
 PUB=$( cat /etc/slowdns/server.pub )
 NS=`cat /etc/xray/dns`
 domain=`cat /etc/xray/domain`
@@ -84,7 +84,6 @@ IP               : $IP
 Host             : $domain
 Host Slowdns     : $NS
 Pub Key          : $PUB
-Location         : $CITY
 Port OpenSSH     : 443, 80, 22
 Port Dropbear    : 143, 109
 Port Dropbear WS : 443, 109
