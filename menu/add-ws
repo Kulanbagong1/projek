@@ -8,7 +8,7 @@ URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
 domain=$(cat /etc/xray/domain)
 PUB=$(cat /etc/slowdns/server.pub)
-CITY=$(cat /etc/xray/city)
+#CITY=$(cat /etc/xray/city)
 NS=$(cat /etc/xray/dns)
 ipsaya=$(wget -qO- ipinfo.io/ip)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
@@ -206,7 +206,6 @@ TEXT="
 <code>Domain       : ${domain}</code>
 <code>Host Slowdns : ${NS}</code>
 <code>Pub Key      : ${PUB}</code>
-<code>Location     : $CITY</code>
 <code>User Quota   : ${Quota} GB</code>
 <code>Port TLS     : 443</code>
 <code>Port DNS     : 443, 53</code>
@@ -268,7 +267,6 @@ echo -e "Remarks      : ${user}"
 echo -e "Domain       : ${domain}"
 echo -e "Host Slowdns : ${NS}"
 echo -e "Pub Key      : ${PUB}"
-echo -e "Location     : $CITY"
 echo -e "User Quota   : ${Quota} GB"
 echo -e "Port TLS     : 443"
 echo -e "Port NTLS    : 80, 8080, 2086"
