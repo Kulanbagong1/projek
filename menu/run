@@ -18,6 +18,7 @@ swap=$(free -m | awk 'NR==4 {print $2}')
 freq=$(awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo)
 cores=$(awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo)
 cname=$(awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo)
+Repo1="https://raw.githubusercontent.com/Kulanbagong1/izinn/main/"
 export MYIP=$( curl -s https://ipinfo.io/ip/ )
 Name=$(curl -sS ${Repo1}ip | grep $MYIP | awk '{print $2}')
 Exp=$(curl -sS ${Repo1}ip | grep $MYIP | awk '{print $3}')
