@@ -3,7 +3,7 @@ clear
 red() { echo -e "\\033[32;1m${*}\\033[0m"; }
 domain=$(cat /etc/xray/domain)
 PUB=$(cat /etc/slowdns/server.pub)
-CITY=$(cat /etc/xray/city)
+#CITY=$(cat /etc/xray/city)
 NS=$(cat /etc/xray/dns)
 TIMES="10"
 CHATID=$(grep -E "^#bot# " "/etc/bot/.bot.db" | cut -d ' ' -f 3)
