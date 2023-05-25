@@ -59,14 +59,14 @@ else
     status_nginx="${RED}OFF${NC}"
 fi
 
-xray=$( systemctl status haproxy | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
+xray=$(systemctl status haproxy | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g')
 if [[ $xray == "running" ]]; then
     status_xray="${GREEN}ON${NC}"
 else
     status_xray="${RED}OFF${NC}"
 fi
 
-haproxy=$( systemctl status haproxy | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
+Haproxy=$(systemctl status haproxy | grep active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g')
 if [[ $xray == "running" ]]; then
     status_haproxy="${GREEN}ON${NC}"
 else
