@@ -8,6 +8,7 @@ Blue="\033[36m"
 GREEN='\033[0;32m'
 grenbo="\e[92;1m"
 yellow='\033[0;33m'
+Repo1="https://raw.githubusercontent.com/Kulanbagong1/izinn/main/"
 #ISP=$(cat /etc/xray/isp)
 #CITY=$(cat /etc/xray/city)
 domain=$(cat /etc/xray/domain)
