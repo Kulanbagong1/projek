@@ -36,9 +36,9 @@ BGX="\033[42m"
 UPDATE="https://raw.githubusercontent.com/Kulanbagong1/vps/main/"
 BOT="https://raw.githubusercontent.com/Kulanbagong1/Panel/main/"
 Repo1="https://raw.githubusercontent.com/Kulanbagong1/izinn/main/"
-ISP=$(cat /etc/xray/isp)
+#ISP=$(cat /etc/xray/isp)
 NS=$(cat /etc/xray/dns)
-CITY=$(cat /etc/xray/city)
+#CITY=$(cat /etc/xray/city)
 IPVPS=$(curl -s ipv4.icanhazip.com)
 domain=$(cat /etc/xray/domain)
 RAM=$(free -m | awk 'NR==2 {print $2}')
@@ -47,7 +47,7 @@ MEMOFREE=$(printf '%-1s' "$(free -m | awk 'NR==2{printf "%.2f%", $3*100/$2 }')")
 LOADCPU=$(printf '%-0.00001s' "$(top -bn1 | awk '/Cpu/ { cpu = "" 100 - $8 "%" }; END { print cpu }')")
 MODEL=$(cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/PRETTY_NAME//g')
 CORE=$(printf '%-1s' "$(grep -c cpu[0-9] /proc/stat)")
-Namee="RizkiHdyt | Muslihudin | FREE TUNNEL"
+Namee="JENGKOLONLINE | VPN | SC Premium"
 DATEVPS=$(date +'%d/%m/%Y')
 TIMEZONE=$(printf '%(%H:%M:%S)T')
 SERONLINE=$(uptime -p | cut -d " " -f 2-10000)
