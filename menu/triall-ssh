@@ -36,9 +36,8 @@ BGX="\033[42m"
 red() { echo -e "\\033[32;1m${*}\\033[0m"; }
 domain=$(cat /etc/xray/domain)
 IP=$(curl -sS ifconfig.me)
-#CITY=$(cat /etc/xray/city)
-PUB=$( cat /etc/slowdns/server.pub )
-NS=$(cat /etc/xray/dns)
+NS=$(cat /root/nsdomain)
+PUB=$(cat /etc/slowdns/server.pub)
 TIMES="10"
 CHATID=$(grep -E "^#bot# " "/etc/bot/.bot.db" | cut -d ' ' -f 3)
 KEY=$(grep -E "^#bot# " "/etc/bot/.bot.db" | cut -d ' ' -f 2)
