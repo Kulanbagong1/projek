@@ -35,9 +35,8 @@ echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━�
 echo -e " \e[1;97;101m    CREATE TRIALL VMESS ACCOUNT       \e[0m"
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 domain=$(cat /etc/xray/domain)
+NS=$(cat /root/nsdomain)
 PUB=$(cat /etc/slowdns/server.pub)
-#CITY=$(cat /etc/xray/city)
-NS=$(cat /etc/xray/dns)
 masaaktif=1
 Quota=5
 user=Trial-VM`</dev/urandom tr -dc 0-9 | head -c3`
