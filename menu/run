@@ -8,8 +8,8 @@ Blue="\033[36m"
 GREEN='\033[0;32m'
 grenbo="\e[92;1m"
 yellow='\033[0;33m'
-ISP=$(cat /etc/xray/isp)
-CITY=$(cat /etc/xray/city)
+#ISP=$(cat /etc/xray/isp)
+#CITY=$(cat /etc/xray/city)
 domain=$(cat /etc/xray/domain)
 WKT=$(curl -s ipinfo.io/timezone)
 IPVPS=$(curl -s ipv4.icanhazip.com)
@@ -201,8 +201,6 @@ echo -e "\033[93mOperating System$NC    $grenbo:$NC$yellow $(cat /etc/os-release
 echo -e "\033[93mClient Name$NC         $grenbo:$NC$yellow $Name$NC"
 echo -e "\033[93mTotal Amount Of RAM$NC $grenbo:$NC$yellow $tram MB$NC"
 echo -e "\033[93mIp Server$NC           $grenbo:$NC$yellow $IPVPS$NC"
-echo -e "\033[93mIsp Server$NC          $grenbo:$NC$yellow $ISP$NC"
-echo -e "\033[93mCity Server$NC         $grenbo:$NC$yellow $CITY$NC"
 echo -e "\033[93mDomain$NC              $grenbo:$NC$yellow $(cat /etc/xray/domain)$NC"
 echo -e "\033[93mServer Uptime$NC       $grenbo:$NC$yellow $(uptime -p | cut -d " " -f 2-10000)$NC"
 echo -e "\033[93mExp Script$NC          $grenbo:$NC$yellow $Exp$NC"
