@@ -1,9 +1,9 @@
 #!/bin/bash
 red() { echo -e "\\033[32;1m${*}\\033[0m"; }
 TIMES="10"
-CHATID="1316596937"
-KEY="6003347945:AAHv1Ti4HQliYwpYm8sbKrriDkSMqqJLUqE"
-URL="https://api.telegram.org/bot$KEY/sendMessage"
+#CHATID="1316596937"
+#KEY="6003347945:AAHv1Ti4HQliYwpYm8sbKrriDkSMqqJLUqE"
+#URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
 red='\e[1;31m'
 green='\e[0;32m'
