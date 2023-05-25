@@ -327,7 +327,6 @@ TEXT="
 <code>•────•──────•──────•─────•</code>
 <code>Remarks           : ${user}</code>
 <code>Domain            : ${domain}</code>
-<code>Location          : $CITY</code>
 <code>User Quota        : ${Quota} GB</code>
 <code>Port TLS          : 443</code>
 <code>Port GRPC         : 443</code>
@@ -388,7 +387,6 @@ echo -e " \e[1;97;101m           SUCCES CREAT SHADOWSOCKS ACCOUNT          \e[0m
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "Remarks        : ${user}"
 echo -e "Domain         : ${domain}"
-echo -e "Location       : $CITY"
 echo -e "User Quota     : ${Quota} GB"
 echo -e "User ID        : ${uuid}"
 echo -e "Port TLS       : 443"
