@@ -21,8 +21,8 @@ cname=$(awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo)
 Exp="LIFETIME"
 Name="RizkiHdyt | Muslihudin"
 Open_SSH=$(systemctl status ssh | grep active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g')
-Dropbear=$(systemctl status dropbear | grep active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g')
-Dropbear_Websocket=$(systemctl status dropbear | grep active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g')
+Dropbear=$(/etc/default/dropbear | grep active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g')
+Dropbear_Websocket=$(/etc/default/dropbear | grep active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g')
 SSH_Websocket=$(systemctl status ws | grep active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g')
 OpenVPN=$(systemctl status openvpn | grep active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g')
 Nginx_Webserver=$(systemctl status nginx | grep active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g')
