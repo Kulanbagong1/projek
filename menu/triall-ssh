@@ -36,7 +36,7 @@ BGX="\033[42m"
 red() { echo -e "\\033[32;1m${*}\\033[0m"; }
 domain=$(cat /etc/xray/domain)
 IP=$(curl -sS ifconfig.me)
-CITY=$(cat /etc/xray/city)
+#CITY=$(cat /etc/xray/city)
 PUB=$( cat /etc/slowdns/server.pub )
 NS=$(cat /etc/xray/dns)
 TIMES="10"
@@ -117,7 +117,6 @@ TEXT="
 <code>Host             : $domain</code>
 <code>Host Slowdns     : ${NS}</code>
 <code>Pub Key          : ${PUB}</code>
-<code>Location         : $CITY</code>
 <code>Port UDP Custom  : 54-65535</code>
 <code>Port OpenSSH     : 443, 80, 22</code>
 <code>Port Dropbear    : 143, 109</code>
@@ -170,7 +169,6 @@ echo -e "IP               : $IP"
 echo -e "Host             : $domain"
 echo -e "Host Slowdns     : ${NS}"
 echo -e "Pub Key          : ${PUB}"
-echo -e "Location         : $CITY"
 echo -e "Port OpenSSH     : 443, 80, 22"
 echo -e "Port DNS         : 443, 53 ,22"
 echo -e "Port Dropbear    : 443, 109"
