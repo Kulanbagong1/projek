@@ -7,7 +7,7 @@ KEY=$(grep -E "^#bot# " "/etc/bot/.bot.db" | cut -d ' ' -f 2)
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 domain=$(cat /etc/xray/domain)
 PUB=$(cat /etc/slowdns/server.pub)
-CITY=$(cat /etc/xray/city)
+#CITY=$(cat /etc/xray/city)
 NS=$(cat /etc/xray/dns)
 ipsaya=$(wget -qO- ipinfo.io/ip)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
@@ -150,7 +150,6 @@ TEXT="
 <code>──────────────────────────</code>
 <code>Remarks      : ${user}</code>
 <code>Domain       : ${domain}</code>
-<code>Location     : $CITY</code>
 <code>User Quota   : ${Quota} GB</code>
 <code>Port TLS     : 443</code>
 <code>Port DNS     : 443, 53</code>
@@ -210,7 +209,6 @@ echo -e " \e[1;97;101m       SUCCES CREAT VLESS ACCOUNT       \e[0m"
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "Remarks     : ${user}"
 echo -e "Domain      : ${domain}"
-echo -e "Location    : $CITY"
 echo -e "User Quota  : ${Quota} GB"
 echo -e "port TLS    : 443"
 echo -e "Port DNS    : 443, 53 "
