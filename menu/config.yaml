@@ -1,3 +1,4 @@
+cat > /etc/xray/$user-open-clash-443.yaml <<-END
 proxies:
   - {name: $user, server: ${domain}, port: 443, type: trojan, password: $uuid, sni: $sni, skip-cert-verify: true, udp: true}
 
