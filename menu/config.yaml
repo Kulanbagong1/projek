@@ -1,5 +1,5 @@
 proxies:
-  - {name: ctechdidik, server: xxx, port: 443, type: trojan, password: xxx, sni: xxx, skip-cert-verify: true, udp: true}
+  - {name: $user, server: ${domain}, port: 443, type: trojan, password: $uuid, sni: $sni, skip-cert-verify: true, udp: true}
 
 
 proxy-groups:
